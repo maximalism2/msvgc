@@ -1,0 +1,37 @@
+{
+  "name": "msvgc",
+  "version": "0.1.0",
+  "description": "Small util for making reusable react / react-native component from plain svg files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "msvgc": "./bin/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/necinc/msvgc.git"
+  },
+  "keywords": [
+    "react",
+    "svg",
+    "node",
+    "command-line"
+  ],
+  "author": "necinc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/necinc/msvgc/issues"
+  },
+  "homepage": "https://github.com/necinc/msvgc#readme",
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {
+    "eslint": "^3.9.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.1",
+    "eslint-plugin-standard": "^2.0.1"
+  }
+}
