@@ -26,7 +26,9 @@
   },
   "homepage": "https://github.com/necinc/msvgc#readme",
   "dependencies": {
-    "colors": "^1.1.2"
+    "colors": "^1.1.2",
+    "svgo": "^0.7.1",
+    "xmldom": "^0.1.22"
   },
   "devDependencies": {
     "eslint": "^3.9.1",
