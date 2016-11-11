@@ -1,6 +1,6 @@
 {
   "name": "msvgc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Small util for making reusable react / react-native component from plain svg files",
   "main": "index.js",
   "scripts": {
