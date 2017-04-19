@@ -20,6 +20,7 @@ msvgc -f ./path/to/pic.svg -o ./svgComponents/
 
 <br />
 Then use generated components in your jsx/tsx files:
+
 ```js
 [...]
 
