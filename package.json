@@ -29,6 +29,8 @@
     "camelcase": "^4.1.0",
     "colors": "^1.1.2",
     "fs-extra": "^3.0.1",
+    "indent-string": "^3.1.0",
+    "pretty-data": "^0.40.0",
     "svgo": "^0.7.1",
     "xmldom": "^0.1.22"
   },
