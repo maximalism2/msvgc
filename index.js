@@ -7,7 +7,7 @@ const generateConfig = require('./lib/generateConfig');
   const config = generateConfig(argv)
 
   if (config.error) {
-    process.end(1)
+    process.exit(1)
   }
 
   generateComponents(config)
