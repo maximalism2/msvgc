@@ -14,12 +14,18 @@ npm install -g msvgc
 msvgc -f ./path/to/pic.svg -o ./svgComponents/
 ```
 
-`--react-native` flag create components using [react-native-svg](https://github.com/react-native-community/react-native-svg) library
+`--camelCase` flag creates components with camel-case class names
 
-`--typescript` flag will using react importing like in typescript (`import * as React`)
+`--react-native` flag creates components using [react-native-svg](https://github.com/react-native-community/react-native-svg) library
+
+`--color` flag creates react-native components with color props pased to the svg children's fill prop
+
+`--typescript` flag will use typescript import statements e.g. (`import * as React`)
+
+`--coffeescript` flag will use CoffeeScript CJSX syntax for creating components
 
 <br />
-Then use generated components in your jsx/tsx files:
+Then use generated components in your jsx/tsx/cjsx files:
 
 ```js
 [...]
@@ -41,5 +47,5 @@ class MyComponent extends Component {
 ```
 
 #### TODO:
-- [ ] do creating index file in components directory for exporting created files
+- [x] do creating index file in components directory for exporting created files
 - [ ] do comparating with existing files in target component directory
