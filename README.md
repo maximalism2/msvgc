@@ -14,13 +14,6 @@ npm install -g msvgc
 msvgc -f ./path/to/pic.svg -o ./svgComponents/
 ```
 
-If default params are not set, the current working
-directory will be used as the path to .svg files with output in the ./svg directory.
-
-Subdirectories containing .svg files will generate their corresponding react components within a subdirectory in the output path.
-
-The output path contains an index.js that exports all generated components.
-
 `--camelCase` flag creates components with camel-case class names
 
 `--react-native` flag creates components using [react-native-svg](https://github.com/react-native-community/react-native-svg) library
@@ -31,8 +24,17 @@ The output path contains an index.js that exports all generated components.
 
 `--coffeescript` flag will use CoffeeScript CJSX syntax for creating components
 
-<br />
-Then use generated components in your jsx/tsx/cjsx files:
+**Notes:**
+
+If default params are not set, the current working
+directory will be used as the path to .svg files with output in the ./svg directory.
+
+Subdirectories containing .svg files will generate their corresponding react components within a subdirectory in the output path.
+
+The output path contains an index.js that exports all generated components.
+
+### React JS:
+Use generated components in your jsx/tsx/cjsx files:
 
 ```js
 [...]
