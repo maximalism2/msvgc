@@ -14,12 +14,27 @@ npm install -g msvgc
 msvgc -f ./path/to/pic.svg -o ./svgComponents/
 ```
 
-`--react-native` flag create components using [react-native-svg](https://github.com/react-native-community/react-native-svg) library
+`--camelCase` flag creates components with camel-case class names
 
-`--typescript` flag will using react importing like in typescript (`import * as React`)
+`--react-native` flag creates components using [react-native-svg](https://github.com/react-native-community/react-native-svg) library
 
-<br />
-Then use generated components in your jsx/tsx files:
+`--color` flag creates react-native components with color props passed to the svg children's fill prop
+
+`--typescript` flag will use typescript import statements e.g. (`import * as React`)
+
+`--coffeescript` flag will use CoffeeScript CJSX syntax for creating components
+
+**Notes:**
+
+If default params are not set, the current working
+directory will be used as the path to .svg files with output in the ./svg directory.
+
+Subdirectories containing .svg files will generate their corresponding react components within a subdirectory in the output path.
+
+The output path contains an index.js that exports all generated components.
+
+### React JS:
+Use generated components in your jsx/tsx/cjsx files:
 
 ```js
 [...]
@@ -41,5 +56,6 @@ class MyComponent extends Component {
 ```
 
 #### TODO:
-- [ ] do creating index file in components directory for exporting created files
-- [ ] do comparating with existing files in target component directory
+- [x] Create index file in target component directory.
+  - [ ] Provide warning when duplicate component names exist in the index.
+- [ ] Compare existing files in target component directory.
